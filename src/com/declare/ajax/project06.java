@@ -19,17 +19,17 @@ public class project06 extends HttpServlet {
         String val = request.getParameter("computerId");
         List computer = new ArrayList();
         if(val.equals("1")){
-            computer.add("M24");
-            computer.add("98K");
-            computer.add("M4A1");
+            computer.add("全家桶");
+            computer.add("冰淇淋");
+            computer.add("甜品派");
         }else if(val.equals("2")){
-            computer.add("顺子");
-            computer.add("王炸");
-            computer.add("飞机");
+            computer.add("果茶");
+            computer.add("奶茶");
+            computer.add("冰淇淋");
         }else if(val.equals("3")){
-            computer.add("排位");
-            computer.add("匹配");
-            computer.add("人机");
+            computer.add("包子");
+            computer.add("馒头");
+            computer.add("油条");
         }
         String json = JSON.toJSONString(computer);
         System.out.println(json);
